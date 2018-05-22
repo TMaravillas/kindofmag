@@ -1,0 +1,66 @@
+.header {
+  height: 4rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  background: $light-grey;
+  &.dark{
+    background: $black;
+  }
+}
+
+.header__wrap {
+  height: 100%;
+  align-items: center;
+  border-bottom: 0.5px solid grey;
+
+}
+
+.header__nav {
+  .menu{
+    list-style: none;
+    display: flex;
+    align-items: stretch;
+    margin: 0;
+  }
+
+  li {
+    margin: 0;
+  }
+
+  a {
+    padding: 1.5rem;
+    font-family: $font-family-secondary;
+    text-transform: uppercase;
+    letter-spacing: 0.06rem;
+    color: $color-initial;
+    font-size: 1.4rem;
+  }
+}
+.logo {
+  height: auto;
+  width: 110px;
+  text-align: left;
+
+  img {
+    height: auto;
+    width: 110px;
+    fill: $black;
+  }
+}
+.yapiskan{
+  left:0;
+  top:0;
+  width:100%;
+  transition: top .5s;
+}
+
+.gizle {
+  top: -90px;
+}
+.sabit {
+  top:0;
+	z-index: 9999;
+}

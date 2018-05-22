@@ -1,0 +1,52 @@
+
+// Link
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+a {
+	color: $color-quaternary;
+	text-decoration: none;
+
+	&:hover {
+		color: $dark-black;
+		cursor: url('../../hover-04.svg');
+	}
+}
+.article, .thumbnail{
+	position: relative;
+}
+
+.read-more{
+		display: block;
+		opacity: 0;
+		position: absolute;
+	 top: 47%;
+	 left: 50%;
+	 transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 -webkit-transition: 420ms ease;
+	transition: 420ms ease;
+	background: $black;
+	height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+	&::after{
+		content: 'see more';
+		color: $color-initial;
+		position: absolute;
+    top: 50%;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    transform: translateY(-50%);
+		font-family: $font-family-secondary;
+		text-transform: uppercase;
+	}
+}
+.article:hover {
+
+	& .read-more{
+		opacity: 1;
+		-webkit-transition: 420ms ease;
+		transition: 420ms ease;
+	}
+}

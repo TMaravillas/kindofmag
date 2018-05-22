@@ -1,0 +1,13 @@
+
+// Blockquote
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+blockquote {
+	margin-left: 2.5rem;
+	margin-right: 0;
+	padding: 1.9rem 0 1.9rem 1.5rem;
+	margin-top: 1.9rem;
+	& *:last-child {
+		margin: 0;
+	}
+}

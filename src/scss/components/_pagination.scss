@@ -1,0 +1,127 @@
+.pagination {
+  display: flex;
+  justify-content: space-between;
+}
+
+.pagination--button {
+  display: block;
+
+  a {
+    display: inline-flex;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  i {
+    margin: 0 1rem;
+  }
+}
+
+.pagination--numeric{
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .pagination--button {
+    margin: 0 0.5rem;
+
+    &.active {
+      font-weight: 600;
+    }
+  }
+}
+//navigation
+
+#cooler-nav{
+  .c-pagination{
+    position: fixed;
+        top: calc(50% - 10%);
+    height: 0px;
+    display: block;
+    z-index: 1;
+  }
+  .c-pagination--prev {
+        left: 0px;
+  }
+  .c-pagination--prev .c-pagination__flag{
+    transform: translateX(-390px);
+    padding: 30px 30px 30px 48px;
+  }
+  .c-pagination__flag{
+    display: block;
+    color: rgb(26, 26, 26);
+    position: absolute;
+    width: 390px;
+    display: block;
+    background: $color-initial;
+    border-image: initial;
+    transition: transform 500ms ease, opacity 500ms ease;
+    h4{
+      text-transform: uppercase;
+      font-weight: 400;
+          margin-bottom: 0.4rem;
+          display: inline-block;
+      margin-top: 0.6rem;
+    }
+    p{
+    display: inline-block;
+    float: left;
+    font-size: 0.8rem;
+    line-height: 1.2rem;
+    }
+    img{
+      min-height: 150px;
+      width: auto;
+      float: left;
+    }
+  }
+  .c-pagination__anchor {
+    top: 85px;
+    position: relative;
+    text-transform: uppercase;
+    letter-spacing: 0.115em;
+    transform: rotate(-90deg);
+    font-size: 14px;
+    left: -38px;
+    font-family: $font-family-secondary;
+    &:hover{
+      cursor: pointer;
+    }
+}
+  .c-pagination--prev:hover .c-pagination__flag{
+    transform: translateX(0px);
+    opacity: 1;
+  }
+  .c-pagination--next .c-pagination__anchor{
+    right: 0;
+    left: auto;
+  }
+}
+
+
+.c-pagination--next:hover .c-pagination__flag{
+  transform: translateX(0px);
+  opacity: 1;
+}
+.c-pagination--next {
+    right: 0;
+}
+.c-pagination--next .c-pagination__anchor{
+  -webkit-transform: rotate(90deg);
+-ms-transform: rotate(90deg);
+transform: rotate(90deg);
+margin-right: -20px;
+}
+.c-pagination--next .c-pagination__flag {
+    padding: 30px 48px 30px 30px;
+    -webkit-transform: translateX(390px);
+    -ms-transform: translateX(390px);
+    transform: translateX(390px);
+}
+.c-pagination--next:hover .c-pagination__flag{
+  -webkit-transform: translateX(-332px);
+-ms-transform: translateX(-332px);
+transform: translateX(-332px);
+opacity: 1;
+}

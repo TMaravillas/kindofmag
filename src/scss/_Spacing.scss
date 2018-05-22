@@ -1,0 +1,40 @@
+
+// Spacing
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+.button,
+button {
+	margin-bottom: 1rem;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+input,
+textarea,
+select,
+fieldset {
+	margin-bottom: 1.5rem;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+pre,
+blockquote,
+dl,
+figure,
+table,
+p,
+ul,
+ol,
+form {
+	margin-bottom: 1rem;
+	&:last-child{
+		margin-bottom: 0;
+	}
+}
+
+.pad{
+	padding: 7rem 0 7rem 0;
+}
